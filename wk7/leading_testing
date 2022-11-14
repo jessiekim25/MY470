@@ -1,0 +1,43 @@
+Last login: Tue Nov  8 16:02:54 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) MacBook-Pro-4:~ yebinkim$ cd "/Users/yebinkim/Desktop/LSE/MY470 Computer programming/lectures/wk7"
+(base) MacBook-Pro-4:wk7 yebinkim$ python3 leading.py
+(base) MacBook-Pro-4:wk7 yebinkim$ python3 test_leading.py
+  File "test_leading.py", line 15
+    if __name__ == '__main__':
+                             ^
+IndentationError: unindent does not match any outer indentation level
+(base) MacBook-Pro-4:wk7 yebinkim$ python3 test_leading.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+(base) MacBook-Pro-4:wk7 yebinkim$ python3 test_leading.py
+.F
+======================================================================
+FAIL: test_word (__main__.TestLeading)
+Test a word
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_leading.py", line 12, in test_word
+    self.assertEqual(expected, output, 'Argument is a word')
+AssertionError: Lists differ: ['b', 'be', 'bea', 'ber'] != ['b', 'be', 'bea', 'bear']
+
+First differing element 3:
+'ber'
+'bear'
+
+- ['b', 'be', 'bea', 'ber']
++ ['b', 'be', 'bea', 'bear']
+?                       +
+ : Argument is a word
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
+(base) MacBook-Pro-4:wk7 yebinkim$ 
