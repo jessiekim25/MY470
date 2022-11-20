@@ -358,6 +358,18 @@ print(ls)
 ```
 
 _Your cell here._
+```{r}
+ls <- list()
+
+for (i in 1:100) {
+  if (i%%3 == 0) {
+    ls[i] <- NA
+  } else {ls[i] = i}
+}
+
+ls
+```
+
 
 ```python
 # Exercise 2: Sum the even integers from the list below.
@@ -372,6 +384,20 @@ print(summ)
 ```
 
 _Your cell here._
+```{r}
+lst <- c(1, 3, 2, 4.5, 7, 8, 10, 3, 5, 4, 7, 3.33)
+
+summ <- 0
+
+for (i in lst) {
+  if (i %% 2 == 0) {
+    summ <- summ + i
+  }
+}
+
+print(summ)
+```
+
 
 ### Function Exercises
 
@@ -395,6 +421,20 @@ print(zerolist)
 ```
 
 _Your cell here._
+```{r}
+zero_list <- function(alist) {
+  newlist <- length(alist) 
+  return(newlist)
+}
+
+mylist <- c(1,2,3)
+
+zerolist <- zero_list(mylist)  
+print(mylist)
+print(zerolist)
+```
+```
+
 
 ```python
 # Exercise 4
